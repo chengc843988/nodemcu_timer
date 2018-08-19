@@ -1,3 +1,6 @@
+// https://github.com/adafruit/RTClib
+// https://github.com/marcoschwartz/LiquidCrystal_I2C
+
 #ifdef ESP32
 #include <WiFi.h>
 #else
@@ -80,9 +83,11 @@ bool endWifi() {
     WiFi.mode(WIFI_OFF);
   }
 }
+/*
 ###############################################3
 # 讀取 NTP值
 ###############################################
+*/
 WiFiUDP Udp;
 
 const int NTP_PACKET_SIZE = 48;
